@@ -1,0 +1,485 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "firstName": "Emma",
+      "lastName": "Johnson",
+      "email": "emma.johnson@university.edu",
+      "enrollmentDate": "2023-09-01",
+      "major": "Computer Science",
+      "gpa": 3.8,
+      "year": "Junior",
+      "active": true
+    },
+    {
+      "id": 2,
+      "firstName": "Liam",
+      "lastName": "Smith",
+      "email": "liam.smith@university.edu",
+      "enrollmentDate": "2023-09-01",
+      "major": "Mathematics",
+      "gpa": 3.6,
+      "year": "Junior",
+      "active": true
+    },
+    {
+      "id": 3,
+      "firstName": "Olivia",
+      "lastName": "Brown",
+      "email": "olivia.brown@university.edu",
+      "enrollmentDate": "2024-09-01",
+      "major": "Computer Science",
+      "gpa": 3.9,
+      "year": "Sophomore",
+      "active": true
+    },
+    {
+      "id": 4,
+      "firstName": "Noah",
+      "lastName": "Davis",
+      "email": "noah.davis@university.edu",
+      "enrollmentDate": "2022-09-01",
+      "major": "Data Science",
+      "gpa": 3.7,
+      "year": "Senior",
+      "active": true
+    },
+    {
+      "id": 5,
+      "firstName": "Ava",
+      "lastName": "Wilson",
+      "email": "ava.wilson@university.edu",
+      "enrollmentDate": "2024-09-01",
+      "major": "Information Systems",
+      "gpa": 3.5,
+      "year": "Sophomore",
+      "active": true
+    },
+    {
+      "id": 6,
+      "firstName": "Ethan",
+      "lastName": "Martinez",
+      "email": "ethan.martinez@university.edu",
+      "enrollmentDate": "2023-09-01",
+      "major": "Computer Science",
+      "gpa": 3.4,
+      "year": "Junior",
+      "active": false
+    },
+    {
+      "id": 7,
+      "firstName": "Sophia",
+      "lastName": "Garcia",
+      "email": "sophia.garcia@university.edu",
+      "enrollmentDate": "2022-09-01",
+      "major": "Software Engineering",
+      "gpa": 3.9,
+      "year": "Senior",
+      "active": true
+    },
+    {
+      "id": 8,
+      "firstName": "Mason",
+      "lastName": "Lopez",
+      "email": "mason.lopez@university.edu",
+      "enrollmentDate": "2024-09-01",
+      "major": "Computer Science",
+      "gpa": 3.6,
+      "year": "Sophomore",
+      "active": true
+    }
+  ],
+  "instructors": [
+    {
+      "id": 101,
+      "firstName": "Dr. Sarah",
+      "lastName": "Anderson",
+      "email": "sarah.anderson@university.edu",
+      "department": "Computer Science",
+      "hireDate": "2015-08-15",
+      "officeLocation": "Tech Building 305",
+      "specialty": "Algorithms and Data Structures"
+    },
+    {
+      "id": 102,
+      "firstName": "Prof. Michael",
+      "lastName": "Chen",
+      "email": "michael.chen@university.edu",
+      "department": "Computer Science",
+      "hireDate": "2018-01-10",
+      "officeLocation": "Tech Building 412",
+      "specialty": "Web Development"
+    },
+    {
+      "id": 103,
+      "firstName": "Dr. Jennifer",
+      "lastName": "Kumar",
+      "email": "jennifer.kumar@university.edu",
+      "department": "Mathematics",
+      "hireDate": "2012-09-01",
+      "officeLocation": "Math Building 201",
+      "specialty": "Applied Mathematics"
+    },
+    {
+      "id": 104,
+      "firstName": "Prof. David",
+      "lastName": "Thompson",
+      "email": "david.thompson@university.edu",
+      "department": "Computer Science",
+      "hireDate": "2020-08-20",
+      "officeLocation": "Tech Building 508",
+      "specialty": "Database Systems"
+    },
+    {
+      "id": 105,
+      "firstName": "Dr. Maria",
+      "lastName": "Rodriguez",
+      "email": "maria.rodriguez@university.edu",
+      "department": "Data Science",
+      "hireDate": "2017-01-15",
+      "officeLocation": "Data Center 102",
+      "specialty": "Machine Learning"
+    }
+  ],
+  "courses": [
+    {
+      "id": 201,
+      "code": "CS101",
+      "name": "Introduction to Programming",
+      "credits": 3,
+      "department": "Computer Science",
+      "instructorId": 102,
+      "capacity": 30,
+      "schedule": {
+        "days": ["Monday", "Wednesday", "Friday"],
+        "time": "09:00-09:50",
+        "room": "Tech 101"
+      },
+      "prerequisites": []
+    },
+    {
+      "id": 202,
+      "code": "CS201",
+      "name": "Data Structures",
+      "credits": 4,
+      "department": "Computer Science",
+      "instructorId": 101,
+      "capacity": 25,
+      "schedule": {
+        "days": ["Tuesday", "Thursday"],
+        "time": "10:00-11:50",
+        "room": "Tech 205"
+      },
+      "prerequisites": ["CS101"]
+    },
+    {
+      "id": 203,
+      "code": "CS301",
+      "name": "Algorithms",
+      "credits": 4,
+      "department": "Computer Science",
+      "instructorId": 101,
+      "capacity": 25,
+      "schedule": {
+        "days": ["Monday", "Wednesday"],
+        "time": "14:00-15:50",
+        "room": "Tech 308"
+      },
+      "prerequisites": ["CS201"]
+    },
+    {
+      "id": 204,
+      "code": "CS250",
+      "name": "Web Development",
+      "credits": 3,
+      "department": "Computer Science",
+      "instructorId": 102,
+      "capacity": 28,
+      "schedule": {
+        "days": ["Tuesday", "Thursday"],
+        "time": "13:00-14:20",
+        "room": "Tech 115"
+      },
+      "prerequisites": ["CS101"]
+    },
+    {
+      "id": 205,
+      "code": "CS350",
+      "name": "Database Systems",
+      "credits": 3,
+      "department": "Computer Science",
+      "instructorId": 104,
+      "capacity": 30,
+      "schedule": {
+        "days": ["Monday", "Wednesday", "Friday"],
+        "time": "11:00-11:50",
+        "room": "Tech 220"
+      },
+      "prerequisites": ["CS201"]
+    },
+    {
+      "id": 206,
+      "code": "MATH210",
+      "name": "Discrete Mathematics",
+      "credits": 3,
+      "department": "Mathematics",
+      "instructorId": 103,
+      "capacity": 35,
+      "schedule": {
+        "days": ["Tuesday", "Thursday"],
+        "time": "09:00-10:20",
+        "room": "Math 150"
+      },
+      "prerequisites": []
+    },
+    {
+      "id": 207,
+      "code": "DS401",
+      "name": "Machine Learning",
+      "credits": 4,
+      "department": "Data Science",
+      "instructorId": 105,
+      "capacity": 20,
+      "schedule": {
+        "days": ["Monday", "Wednesday"],
+        "time": "15:00-16:50",
+        "room": "Data 201"
+      },
+      "prerequisites": ["CS201", "MATH210"]
+    }
+  ],
+  "enrollments": [
+    {
+      "id": 301,
+      "studentId": 1,
+      "courseId": 203,
+      "enrollmentDate": "2024-08-25",
+      "grade": "A",
+      "status": "completed",
+      "semester": "Fall 2024"
+    },
+    {
+      "id": 302,
+      "studentId": 1,
+      "courseId": 205,
+      "enrollmentDate": "2024-08-25",
+      "grade": "A-",
+      "status": "completed",
+      "semester": "Fall 2024"
+    },
+    {
+      "id": 303,
+      "studentId": 2,
+      "courseId": 206,
+      "enrollmentDate": "2024-08-25",
+      "grade": "B+",
+      "status": "completed",
+      "semester": "Fall 2024"
+    },
+    {
+      "id": 304,
+      "studentId": 3,
+      "courseId": 201,
+      "enrollmentDate": "2024-08-25",
+      "grade": "A",
+      "status": "completed",
+      "semester": "Fall 2024"
+    },
+    {
+      "id": 305,
+      "studentId": 3,
+      "courseId": 204,
+      "enrollmentDate": "2025-01-10",
+      "grade": null,
+      "status": "enrolled",
+      "semester": "Spring 2025"
+    },
+    {
+      "id": 306,
+      "studentId": 4,
+      "courseId": 207,
+      "enrollmentDate": "2024-08-25",
+      "grade": "B",
+      "status": "completed",
+      "semester": "Fall 2024"
+    },
+    {
+      "id": 307,
+      "studentId": 5,
+      "courseId": 201,
+      "enrollmentDate": "2025-01-10",
+      "grade": null,
+      "status": "enrolled",
+      "semester": "Spring 2025"
+    },
+    {
+      "id": 308,
+      "studentId": 7,
+      "courseId": 203,
+      "enrollmentDate": "2024-08-25",
+      "grade": "A",
+      "status": "completed",
+      "semester": "Fall 2024"
+    },
+    {
+      "id": 309,
+      "studentId": 7,
+      "courseId": 207,
+      "enrollmentDate": "2025-01-10",
+      "grade": null,
+      "status": "enrolled",
+      "semester": "Spring 2025"
+    },
+    {
+      "id": 310,
+      "studentId": 8,
+      "courseId": 201,
+      "enrollmentDate": "2024-08-25",
+      "grade": "B+",
+      "status": "completed",
+      "semester": "Fall 2024"
+    },
+    {
+      "id": 311,
+      "studentId": 8,
+      "courseId": 202,
+      "enrollmentDate": "2025-01-10",
+      "grade": null,
+      "status": "enrolled",
+      "semester": "Spring 2025"
+    },
+    {
+      "id": 312,
+      "studentId": 1,
+      "courseId": 207,
+      "enrollmentDate": "2025-01-10",
+      "grade": null,
+      "status": "enrolled",
+      "semester": "Spring 2025"
+    },
+    {
+      "id": 313,
+      "studentId": 2,
+      "courseId": 203,
+      "enrollmentDate": "2025-01-10",
+      "grade": null,
+      "status": "enrolled",
+      "semester": "Spring 2025"
+    },
+    {
+      "id": 314,
+      "studentId": 4,
+      "courseId": 203,
+      "enrollmentDate": "2024-08-25",
+      "grade": "A-",
+      "status": "completed",
+      "semester": "Fall 2024"
+    }
+  ],
+  "assignments": [
+    {
+      "id": 401,
+      "courseId": 201,
+      "title": "Hello World Program",
+      "description": "Write your first program in Python",
+      "dueDate": "2025-01-20",
+      "maxPoints": 10,
+      "type": "homework"
+    },
+    {
+      "id": 402,
+      "courseId": 201,
+      "title": "Variables and Data Types",
+      "description": "Practice working with different data types",
+      "dueDate": "2025-01-27",
+      "maxPoints": 15,
+      "type": "homework"
+    },
+    {
+      "id": 403,
+      "courseId": 202,
+      "title": "Linked List Implementation",
+      "description": "Implement a singly linked list",
+      "dueDate": "2025-02-05",
+      "maxPoints": 30,
+      "type": "project"
+    },
+    {
+      "id": 404,
+      "courseId": 203,
+      "title": "Sorting Algorithms",
+      "description": "Implement and compare QuickSort and MergeSort",
+      "dueDate": "2024-10-15",
+      "maxPoints": 40,
+      "type": "project"
+    },
+    {
+      "id": 405,
+      "courseId": 204,
+      "title": "Personal Portfolio Website",
+      "description": "Create a responsive portfolio website using HTML/CSS/JavaScript",
+      "dueDate": "2025-02-28",
+      "maxPoints": 50,
+      "type": "project"
+    },
+    {
+      "id": 406,
+      "courseId": 207,
+      "title": "Linear Regression Model",
+      "description": "Build and evaluate a linear regression model",
+      "dueDate": "2025-02-20",
+      "maxPoints": 35,
+      "type": "homework"
+    }
+  ],
+  "grades": [
+    {
+      "id": 501,
+      "enrollmentId": 301,
+      "assignmentId": 404,
+      "score": 38,
+      "submittedDate": "2024-10-14",
+      "feedback": "Excellent implementation and analysis"
+    },
+    {
+      "id": 502,
+      "enrollmentId": 304,
+      "assignmentId": 401,
+      "score": 10,
+      "submittedDate": "2025-01-19",
+      "feedback": "Perfect!"
+    },
+    {
+      "id": 503,
+      "enrollmentId": 304,
+      "assignmentId": 402,
+      "score": 14,
+      "submittedDate": "2025-01-26",
+      "feedback": "Great work, minor syntax issues"
+    },
+    {
+      "id": 504,
+      "enrollmentId": 310,
+      "assignmentId": 401,
+      "score": 9,
+      "submittedDate": "2025-01-20",
+      "feedback": "Good effort, check indentation"
+    },
+    {
+      "id": 505,
+      "enrollmentId": 310,
+      "assignmentId": 402,
+      "score": 13,
+      "submittedDate": "2025-01-27",
+      "feedback": "Well done"
+    },
+    {
+      "id": 506,
+      "enrollmentId": 314,
+      "assignmentId": 404,
+      "score": 36,
+      "submittedDate": "2024-10-15",
+      "feedback": "Good analysis, could improve efficiency"
+    }
+  ]
+}
